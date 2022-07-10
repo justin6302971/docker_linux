@@ -1,0 +1,15 @@
+# canonical configuration
+version: "3.7"
+
+services:
+    alpine-service:
+        container_name: alpine_service_${ENVTYPE}
+        image: alpine:3.16.0
+        networks:
+            - local-alpine-nw
+networks:
+    local-alpine-nw:
+        name: local-alpine-nw
+
+        
+  

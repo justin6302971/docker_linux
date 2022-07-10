@@ -1,0 +1,14 @@
+# dev configuration (use docker-compose up will use docker-compose.yml and docker-comspoe.override.yml both)
+# os: mac
+version: "3.7"
+
+services:
+    alpine-service:
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        volumes:
+            - local-alpine-v:/data
+volumes:
+    local-alpine-v:
+
+

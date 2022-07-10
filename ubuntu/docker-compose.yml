@@ -1,0 +1,15 @@
+# canonical configuration
+version: "3.7"
+
+services:
+    ubuntu-service:
+        container_name: ubuntu_service_${ENVTYPE}
+        image: ubuntu:18.04
+        networks:
+            - local-ubuntu-nw
+networks:
+    local-ubuntu-nw:
+        name: local-ubuntu-nw
+
+        
+  
